@@ -1,0 +1,86 @@
+<HTML>
+
+<!--
+Lode Runner!!! HTML
+
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+-->
+
+<HEAD>
+<meta charset="UTF-8">
+<title>Linguagens e Ambientes de Programação (2019/2020) [Eng.Inf. - DI/FCT/UNL] - 3º projeto prático (Javascript) </title>
+<style>
+form{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1 {text-align: center;}
+.multicolortext {
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+</style>
+
+<SCRIPT TYPE="text/javascript" src="LodeRunner0.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" src="LodeRunner.js"></SCRIPT>
+
+</HEAD>
+
+
+<BODY onload="onLoad()" >
+<p>
+<h1><span class="multicolortext">LodeRunner </span> <p> 
+<small>Jose Murta (55226), Diogo Rodrigues (56153)</small></h1>
+<FORM NAME="form1">
+	<CANVAS id="canvas1" width="504" height="272" style="border:3px solid #000000;"  >
+		Your browser doesn't support the HTML5 CANVAS tag.
+		
+	</CANVAS> <p>
+  <b>GOLD LEFT TO CATCH </b> <INPUT TYPE="text" ID="goldLeft" VALUE=" " SIZE=1 READONLY style="text-align: center; font-weight: bold " >
+  <b>  &nbsp&nbsp LEVEL </b> <INPUT TYPE="text" ID="level" VALUE=" " SIZE=1 READONLY style="text-align: center; font-weight: bold ">   <p>
+	<INPUT TYPE="button" NAME="Restart" VALUE="Restart" SIZE=10 OnClick="b1()">
+	<INPUT TYPE="button" NAME="Music On" VALUE="Music on" SIZE=10 OnClick="audioOn()">
+  <INPUT TYPE="button" NAME="Music Off" VALUE="Music off" SIZE=10 OnClick="audioOff()"> 
+  <INPUT TYPE="button" NAME="How to play?" VALUE="How to play?" SIZE=10 OnClick="functionHelp()"> <p>
+  <INPUT TYPE="button" NAME="Level 1" VALUE="Level 1" SIZE=10 OnClick="levelButton (1)">
+  <INPUT TYPE="button" NAME="Level 2" VALUE="Level 2" SIZE=10 OnClick="levelButton (2)">
+  <INPUT TYPE="button" NAME="Level 3" VALUE="Level 3" SIZE=10 OnClick="levelButton (3)">
+  <INPUT TYPE="button" NAME="Level 4" VALUE="Level 4" SIZE=10 OnClick="levelButton (4)">
+  <INPUT TYPE="button" NAME="Level 5" VALUE="Level 5" SIZE=10 OnClick="levelButton (5)">
+  <INPUT TYPE="button" NAME="Level 6" VALUE="Level 6" SIZE=10 OnClick="levelButton (6)">
+  <INPUT TYPE="button" NAME="Level 7" VALUE="Level 7" SIZE=10 OnClick="levelButton (7)">
+  <INPUT TYPE="button" NAME="Level 8" VALUE="Level 8" SIZE=10 OnClick="levelButton (8)"> <p>
+  <INPUT TYPE="button" NAME="Level 9" VALUE="Level 9" SIZE=10 OnClick="levelButton (9)">
+  <INPUT TYPE="button" NAME="Level 10" VALUE="Level 10" SIZE=10 OnClick="levelButton (10)">
+  <INPUT TYPE="button" NAME="Level 11" VALUE="Level 11" SIZE=10 OnClick="levelButton (11)">
+  <INPUT TYPE="button" NAME="Level 12" VALUE="Level 12" SIZE=10 OnClick="levelButton (12)">
+  <INPUT TYPE="button" NAME="Level 13" VALUE="Level 13" SIZE=10 OnClick="levelButton (13)">
+  <INPUT TYPE="button" NAME="Level 14" VALUE="Level 14" SIZE=10 OnClick="levelButton (14)">
+  <INPUT TYPE="button" NAME="Level 15" VALUE="Level 15" SIZE=10 OnClick="levelButton (15)">
+  <INPUT TYPE="button" NAME="Level 16" VALUE="Level 16" SIZE=10 OnClick="levelButton (16)">
+  <p>
+  <div id="HELP" style="display: none;">
+    <b>Move Right:     RIGHT, P, L <p>
+    Move Left:      LEFT, O, J   <p>
+    Move Up:        UP, Q, I    <p>
+    Move Down:      DOWN,A,K    <p>
+
+    Shoot:          SPACE <p>
+    The hero will shoot the direction it is turned to. <p>
+
+    Your goal is to catch all the gold while being chased by the robots and climb the final ladder to the next level.
+    Be careful! They are unpredictable!! </b> <p>
+  </div>
+  
+	
+</FORM>
+</BODY>
+
+
+</HTML>
+<!-- código inicial de AMD/2020 -->
+<!-- vim:set ts=4 sw=4 et: -->
